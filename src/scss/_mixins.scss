@@ -1,0 +1,22 @@
+@mixin quiz-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid $white;
+  border-radius: 4px;
+  color: $white;
+  background: transparent;
+
+  &:hover {
+    background: $bg-mask;
+    box-shadow: 0 0 3px $white;
+    transition: background .3ms ease-in-out;
+    cursor: pointer;
+  }
+}
+
+@mixin page-bg($firstColor, $secondColor) {
+  padding-top: 15vh;
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(135deg, $firstColor, $secondColor);
+}

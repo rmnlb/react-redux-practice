@@ -1,0 +1,21 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 55px;
+  background: $bg-mask;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.nav__link {
+  @include quiz-btn;
+  color: $white;
+  text-decoration: none !important;
+}

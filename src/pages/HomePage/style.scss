@@ -1,0 +1,19 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.homepage {
+  @include page-bg(#1e457e, #e5575e);
+  color: $white;
+  text-align: center;
+
+  h2 {
+    margin-top: 10px;
+  }
+
+  &__mask {
+    margin: 0 auto;
+    padding: 5px 5px 0;
+    background-color: $white;
+    width: fit-content;
+  }
+}

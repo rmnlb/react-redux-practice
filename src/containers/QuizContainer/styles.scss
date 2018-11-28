@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.QuizContainer {
+  margin: auto;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  background: $bg-mask;
+  border: 2px solid $white;
+  border-radius: 5px;
+  width: 75%;
+  height: 60vh;
+
+
+  &__title {
+    color: $white;
+  }
+
+  &__answers {
+    list-style: none;
+    padding: 10px 20px;
+    color: $white;
+  }
+
+  &__item {
+    @include quiz-btn;
+  }
+
+  &__Btn {
+    margin-bottom: 10px;
+    width: 50px;
+    text-align: center;
+    display: block;
+    justify-self: right;
+    color: $white;
+    @include quiz-btn;
+  }
+}

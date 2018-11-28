@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__title {
+    padding: 5px;
+    margin: 0;
+  }
+
+  &__column {
+    width: 24%;
+    background: $bg-mask;
+    border: 1px solid $white;
+    border-radius: 5px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__dropable {
+    height: 60vh;
+    padding-top: 10px;
+    overflow-y: auto;
+    background: $bg-mask;
+  }
+}
+

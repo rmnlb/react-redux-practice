@@ -1,0 +1,20 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.item-task {
+  margin: 0 5px 5px;
+  padding: 5px;
+  box-shadow: 0 2px 5px grey;
+  background: $bg-mask;
+  border-radius: 5px;
+  &__btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__btn {
+    font-size: 14px;
+    @include quiz-btn;
+    padding: 5px 10px;
+  }
+}
